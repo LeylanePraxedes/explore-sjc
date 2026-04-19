@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia de São José dos Campos</title>
+
+<style>
+* { box-sizing: border-box; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html { font-family: Arial; }
+
+.header {
+  background-color: purple;
+  color: white;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: aqua;
+  color: white;
+}
+
+.menu li:hover {
+  background-color: rgb(28, 159, 195);
+}
+
+.aside {
+  background-color: darkturquoise;
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  background-color: turquoise;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.col-3 { width: 25%; }
+.col-6 { width: 50%; }
+
+@media only screen and (max-width: 768px) {
+  [class*="col-"] { width: 100%; }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- TRADUTOR -->
+<div id="google_translate_element"></div>
+
+<div class="header">
+  <h1>São José dos Campos</h1>
+</div>
+
+<br>
+
+<div class="col-6">
+  <h1>SOBRE A CIDADE</h1>
+
+  <p>
+  A origem de São José dos Campos remonta ao século XVI...
+  </p>
+</div>
+
+<div class="row">
+
+  <div class="col-3 menu">
+    <ul>
+      <li><a href="https://www.sjc.sp.gov.br/servicos/esporte-e-qualidade-de-vida/parques/" target="_blank">Parques</a></li>
+      <li><a href="https://www.sjc.sp.gov.br/servicos/inovacao-e-desenvolvimento-economico/turismo/museus-e-predios-historicos/" target="_blank">Museus</a></li>
+      <li><a href="https://www.airbnb.com.br/" target="_blank">Hotéis</a></li>
+    </ul>
+  </div>
+
+  <div class="col-3 aside">
+    <h2>Localização</h2>
+
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234718.28317504696!2d-46.02782519745449!3d-23.189420449963862"
+      width="300" height="250" style="border:0;" allowfullscreen="">
+    </iframe>
+
+    <p><a href="https://www.mezzobar.com.br/" target="_blank">Restaurante</a></p>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>Fins de estudo</p>
+</div>
+
+<!-- SCRIPT TRADUÇÃO -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: 'pt',
+      includedLanguages: 'en,pt',
+      autoDisplay: false
+    },
+    'google_translate_element'
+  );
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
